@@ -2,7 +2,7 @@
 
 A [nix-darwin][1] module for [flakelight][2].
 
-[1]: https://github.com/LnL7/nix-darwin
+[1]: https://github.com/nix-darwin/nix-darwin
 [2]: https://github.com/nix-community/flakelight
 
 ## About
@@ -11,7 +11,7 @@ Provides integration for `darwinConfigurations` & `darwinModules` into your flak
 {
   inputs = {
     flakelight.url = "github:nix-community/flakelight";
-    flakelight-darwin.url = "github:cmacrae/flakelight-darwin";
+    flakelight-darwin.url = "github:theutz/flakelight-darwin";
   };
   outputs = { flakelight, flakelight-darwin, ... }: flakelight ./. {
     imports = [ flakelight-darwin.flakelightModules.default ];
@@ -45,7 +45,7 @@ Provides a minimal example Darwin system declaration, directly in `flake.nix`.
 
 Instantiate your own with:
 ```
-nix flake init -t github:cmacrae/flakelight-darwin
+nix flake init -t github:theutz/flakelight-darwin
 ```
 
 ### [`autoload`](templates/autoload)
@@ -67,5 +67,5 @@ Provides an example configuration comprised of multiple Darwin system declaratio
 
 Instantiate your own with:
 ```
-nix flake init -t github:cmacrae/flakelight-darwin#autoload
+nix flake init -t github:theutz/flakelight-darwin#autoload
 ```
