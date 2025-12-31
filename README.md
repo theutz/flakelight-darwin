@@ -1,9 +1,11 @@
 # flakelight-darwin
 
-A [nix-darwin][1] module for [flakelight][2].
+A [nix-darwin][1] module for [flakelight][2]. Originally created by [@cmacrae][3], updated by [@gkze][4].
 
 [1]: https://github.com/nix-darwin/nix-darwin
 [2]: https://github.com/nix-community/flakelight
+[3]: https://github.com/cmacrae
+[4]: https://github.com/gkze
 
 ## About
 Provides integration for `darwinConfigurations` & `darwinModules` into your flakelight config, like so:
